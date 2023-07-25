@@ -16,7 +16,7 @@ public class Enemies {
    protected static Items itemReward;
    protected static boolean stunned = false;
 
-    public static void getAttacked(int playerDamage) //Get attacked by the player
+    public static void getAttacked(int playerDamage) //Get attacked by the player.
     {
         health =  health - playerDamage;
     }
