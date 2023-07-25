@@ -15,14 +15,8 @@ public class GameMain {
 
 	public static void main (String[] args){
 		startGame();
-		//Trap riddle = new Trap();
-		//riddle.mapKeysToValues();
-		/*while(true){
-			System.out.println(riddle.test());
-		}*/
-		
-		
 	}
+	
 	public static void startGame(){
 		//Story Introduction
 		
@@ -42,23 +36,9 @@ public class GameMain {
 				} else if (classList[playerClassSelection-1] == "Tank"){
 					 player = new Tank(name);
 				}
-				
-				/* 
-				 * Handle Loading things if needed later * 
-				 */
-				//System.out.println(player.getHealth());
-				//System.out.println(player.getBoneShards());
-				//((PlayerClass) player).skillLevelAdd("all");
-				//player.
-				
-				
-				//Fight test = new Fight();
-				//test.loadEnemies();
+
+				// Start play loop
 				Paths paths = new Paths();
-				//while(playing){
-					//Loop the paths
 					paths.startPathing(player);
-					//test.startFight(player, false);
-				//}
 	}
 }
